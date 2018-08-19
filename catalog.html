@@ -24,7 +24,7 @@
       </ul>
       <ul class="main-header__user-navigation">
         <li class="user-navigation__item">
-          <a class="user-navigation__a">Корзина</a>
+          <a class="user-navigation__a" href="#">Корзина</a>
         </li>
       </ul>
     </header>
@@ -32,12 +32,51 @@
     <main>
       <h1>Магазин готовых шаблонов</h2>
       <div class="filters">
-        <p class="filters__price">СТОИМОСТЬ:</p>
-        <!--Здесь будет форма-->
-        <p class="filters__net">СЕТКА:</p>
-        <!--Здесь будет форма-->
-        <p class="filters__especially">ОСОБЕННОСТИ:</p>
-        <a class="filters__btn btn">ПОКАЗАТЬ</a>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <p class="filters__price">СТОИМОСТЬ:</p>
+          <!--Здесь будет форма ЭТУ ФОРМУ НУЖНО ДЕЛАТЬ ЧЕРЕЗ JS-->
+          <input type="range">
+          <span class="price">ОТ</span>
+          <div class="price-wrapper">0</div>
+          <span class="price">ДО</span>
+          <div class="price-wrapper">15 000</div>
+          <p class="filters__net">СЕТКА:</p>
+          <!--Здесь будет форма-->
+          <label for="adaptive-field">
+            <input type="radio" name="adaptive" id="adaptive-field" checked="checked">
+            Адаптивная
+          </label>
+          <label for="fix-field">
+            <input type="radio" name="fix" id="fix-field">
+            Фиксированная
+          </label>
+          <label for="rubber-field">
+            <input type="radio" name="rubber" id="rubber-field">
+            Резиновая
+          </label>
+          <p class="filters__especially">ОСОБЕННОСТИ:</p>
+          <label for="slider-field">
+            <input type="checkbox" name="slider" id="slider-field" checked="checked">
+            Слайдер
+          </label>
+          <label for="advantage-field">
+            <input type="checkbox" name="advantage" id="advantage-field">
+            Блок преимуществ
+          </label>
+          <label for="news-field">
+            <input type="checkbox" name="news" id="news-field">
+            Новости
+          </label>
+          <label for="gallery-field">
+            <input type="checkbox" name="gallery" id="gallery-field">
+            Галерея
+          </label>
+          <label for="bucket-field">
+            <input type="checkbox" name="bucket" id="bucket-field">
+            Корзина
+          </label>
+          <button class="filters__btn btn">ПОКАЗАТЬ</button>
+        </form>
       </div>
       <div class="sorting-wrapper">
         <p class="sorting">СОРТИРОВКА:</p>
@@ -49,48 +88,48 @@
       <ul class="products-list">
         <li class="products-list__item-1">
           <a>
-            <img src="img/img-sedona.jpg" alt="Веб-сайт SEDONA" width="360" height="576">
+            <img src="img/img-sedona.jpg" alt="Веб-сайт SEDONA" width="360" height="576" aria-label="Веб-сайт с туристическим назначением">
           </a>
         </li>
         <li class="products-list__item-2">
           <a>
-            <img src="img/img-pink.jpg" alt="Веб-сайт PINK" width="360" height="576">
+            <img src="img/img-pink.jpg" alt="Веб-сайт PINK" width="360" height="576" aria-label="Приложение для смартфонов, развлекательного характера">
           </a>
         </li>
         <li class="products-list__item-3">
           <a>
-            <img src="img/img-barbershop.jpg" alt="Веб-сайт Barbershop" width="360" height="576">
+            <img src="img/img-barbershop.jpg" alt="Веб-сайт Barbershop" width="360" height="576" aria-label="Интернет-магазин по продаже мужских средств для ухода">
           </a>
         </li>
         <li class="products-list__item-4">
           <a>
-            <img src="img/img-mishka.jpg" alt="Веб-сайт MiSHKA" width="360" height="576">
+            <img src="img/img-mishka.jpg" alt="Веб-сайт MiSHKA" width="360" height="576" aria-label="Интернет-магазин ручной продукции для дома">
           </a>
         </li>
         <li class="products-list__item-5">
           <a>
-            <img src="img/img-aplus.jpg" alt="Веб-сайт APLUS" width="360" height="576">
+            <img src="img/img-aplus.jpg" alt="Веб-сайт APLUS" width="360" height="576" aria-label="Веб-сайт с учебными материалами">
           </a>
         </li>
         <li class="products-list__item-6">
           <a>
-            <img src="img/img-kvast.jpg" alt="Веб-сайт KVAST" width="360" height="576">
+            <img src="img/img-kvast.jpg" alt="Веб-сайт KVAST" width="360" height="576" aria-label="Интернет-магазин со слабоалкогольной продукцией">
           </a>
         </li>
       </ul>
       <div class="paggination-wrapper">
         <ul class="paggination-list">
           <a>
-            <li class="paggination-list__item">1</li>
+            <li class="paggination-list__item" tabindex="1" aria-label="Первая страница магазина">1</li>
           </a>
           <a>
-            <li class="paggination-list__item">2</li>
+            <li class="paggination-list__item" tabindex="1" aria-label="Вторая страница магазина">2</li>
           </a>
           <a/>
-          <li class="paggination-list__item">3</li>
+          <li class="paggination-list__item" tabindex="1" aria-label="Третья страница магазина">3</li>
         </a>
       </ul>
-      <a class="paggination-list__btn btn">СЛЕДУЮЩАЯ</a>
+      <button class="paggination-list__btn btn">СЛЕДУЮЩАЯ</button>
     </div>
   </main>
   <footer class="main-footer">
