@@ -3,11 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс-Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="main-header">
-      <img class="main-header__logo" src="img/nerds-logo.svg" alt="Логотип дизайн студии Нёрдс" width="160" height="65">
+      <a href="index.html">
+        <img class="main-header__logo" src="img/nerds-logo.svg" alt="Логотип дизайн студии Нёрдс" width="160" height="65">
+      </a>
       <ul class="main-header__site-navigation">
         <li class="site-navigation__item">
           <a class="site-navigation__a" href="#">Студия</a>
@@ -34,7 +39,7 @@
       <div class="filters">
         <form action="https://echo.htmlacademy.ru" method="get">
           <p class="filters__price">СТОИМОСТЬ:</p>
-          <!--Здесь будет форма ЭТУ ФОРМУ НУЖНО ДЕЛАТЬ ЧЕРЕЗ JS-->
+          <!--Здесь будет форма, ЭТУ ФОРМУ НУЖНО ДЕЛАТЬ ЧЕРЕЗ JS-->
           <input type="range">
           <span class="price">ОТ</span>
           <div class="price-wrapper">0</div>
@@ -42,39 +47,55 @@
           <div class="price-wrapper">15 000</div>
           <p class="filters__net">СЕТКА:</p>
           <!--Здесь будет форма-->
-          <label for="adaptive-field">
-            <input type="radio" name="adaptive" id="adaptive-field" checked="checked">
-            Адаптивная
-          </label>
-          <label for="fix-field">
-            <input type="radio" name="fix" id="fix-field">
-            Фиксированная
-          </label>
-          <label for="rubber-field">
-            <input type="radio" name="rubber" id="rubber-field">
-            Резиновая
-          </label>
+          <p>
+            <label for="adaptive-field">
+              <input type="radio" name="grid" value="adaptive" id="adaptive-field" checked="checked">
+              Адаптивная
+            </label>
+          </p>
+          <p>
+            <label for="fix-field">
+              <input type="radio" name="grid" value="fix" id="fix-field">
+              Фиксированная
+            </label>
+          </p>
+          <p>
+            <label for="rubber-field">
+              <input type="radio" name="grid" value="rubber" id="rubber-field">
+              Резиновая
+            </label>
+          </p>
           <p class="filters__especially">ОСОБЕННОСТИ:</p>
-          <label for="slider-field">
-            <input type="checkbox" name="slider" id="slider-field" checked="checked">
-            Слайдер
-          </label>
-          <label for="advantage-field">
-            <input type="checkbox" name="advantage" id="advantage-field">
-            Блок преимуществ
-          </label>
-          <label for="news-field">
-            <input type="checkbox" name="news" id="news-field">
-            Новости
-          </label>
-          <label for="gallery-field">
-            <input type="checkbox" name="gallery" id="gallery-field">
-            Галерея
-          </label>
-          <label for="bucket-field">
-            <input type="checkbox" name="bucket" id="bucket-field">
-            Корзина
-          </label>
+          <p>
+            <label for="slider-field">
+              <input type="checkbox" name="slider" id="slider-field" checked="checked">
+              Слайдер
+            </label>
+          </p>
+          <p>
+            <label for="advantage-field">
+              <input type="checkbox" name="advantage" id="advantage-field">
+              Блок преимуществ
+            </label>
+          </p>
+          <p>
+            <label for="news-field">
+              <input type="checkbox" name="news" id="news-field">
+              Новости
+            </label>
+          </p>
+          <p>
+            <label for="gallery-field">
+              <input type="checkbox" name="gallery" id="gallery-field">
+              Галерея
+            </label>
+          </p>
+          <p>
+            <label for="bucket-field">
+              <input type="checkbox" name="bucket" id="bucket-field">
+              Корзина
+            </label>
+          </p>
           <button class="filters__btn btn">ПОКАЗАТЬ</button>
         </form>
       </div>
@@ -129,7 +150,7 @@
           <li class="paggination-list__item" tabindex="1" aria-label="Третья страница магазина">3</li>
         </a>
       </ul>
-      <button class="paggination-list__btn btn">СЛЕДУЮЩАЯ</button>
+      <a class="paggination-list__btn btn">СЛЕДУЮЩАЯ</a>
     </div>
   </main>
   <footer class="main-footer">

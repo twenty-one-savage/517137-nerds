@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+/*HEADER===========================================================================================================================================================================================================================================================================================================================*/
+
+.main-header__site-navigation {
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main-header__site-navigation,
+.main-header__user-navigation {
+  list-style: none;
+}
+
+.main-header__site-navigation a,
+.main-header__user-navigation a {
+  color: #000000;
+}
+
+.main-header__site-navigation a:hover,
+.main-header__site-navigation a:focus,
+.main-header__user-navigation a:hover,
+.main-header__user-navigation a:focus {
+  color: #fb565a;
+}
+.main-header__site-navigation a:active,
+.main-header__user-navigation a:active {
+  color: #bebebe;
+}
+/* FOR BUTTON================================================================================================================================================================================================================================================*/
+.btn {
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: #fb565a;
+}
+
+.btn:hover {
+  background-color: #e74246;
+}
+
+.btn:active {
+  background-color: #d7373b;
+  color: #e37376;
+}
+
+.offers__list-btn-green {
+  background-color: #00ca74;
+}
+
+.offers__list-btn-green:hover {
+  background-color: #00bc6c;
+}
+
+.offers__list-btn-green:active {
+  background-color: #00aa62;
+  color: #37bc83;
+}
+
+.offers__list-btn-yellow {
+  background-color: #efc84a;
+}
+
+.offers__list-btn-yellow:hover {
+  background-color: #eab534;
+}
+
+.offers__list-btn-yellow:active {
+  background-color: #e5a722;
+  color: #ebba52;
+}
+
+.filters__btn {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.filters__btn:hover {
+  color: #000000;
+  background-color: #dfdfdf;
+}
+
+.filters__btn:active {
+  color: #959595;
+  background-color: #d5d5d5;
+}
+
+
+
+ /*MAIN MAIN MAIN=====================================================================================================================================================================================================================================================================================================================================*/
+.offers__list {
+list-style: none;
+}
+
+.offers__list h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.about-us__title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.about-us__text {
+  color: #000000;
+  text-transform: uppercase;
+}
+/*TABLE===========================================================================================================================================================================================================================================================================================================================*/
+.indicators__numeric {
+  font-size: 45px;
+  line-height: 10px;
+  color: #000000;
+}
+.indicators__percent {
+  font-size: 20px;
+  line-height: 10px;
+  vertical-align: super;
+}
+
+/*КЛИЕНТУРА==================================================================================================================================================================================================================================================================================================================================*/
+
+.clientage__list {
+  list-style: none;
+}
+.clientage__list-item-logo1,
+.clientage__list-item-logo2,
+.clientage__list-item-logo3,
+.clientage__list-item-logo4 {
+  opacity: 0.25;
+}
+
+.clientage__list-item-logo1:hover,
+.clientage__list-item-logo2:hover,
+.clientage__list-item-logo3:hover,
+.clientage__list-item-logo4:hover {
+  opacity: 1;
+}
+
+.clientage__list-item-logo1:active,
+.clientage__list-item-logo2:active,
+.clientage__list-item-logo3:active,
+.clientage__list-item-logo4:active {
+  opacity: 0.25;
+}
+
+/*FOOTER===================================================================================================================================================================================================================================================================================================================================================================================================================*/
+
+.main-footer__address-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.main-footer__address-text {
+  line-height: 18px;
+  color: #666666;
+}
+
+.main-footer__social-list {
+  list-style: none;
+}
+
+.social-list-item {
+  background-color: #e1e1e1;
+}
+
+.social-list-item:hover {
+  background-color: #e74246;
+}
+
+.social-list-item:active {
+  background-color: #d7373b;
+}
+
+.vk,
+.fb,
+.inst {
+  opacity: 0,25;
+}
+
+.vk:hover,
+.fb:hover,
+.inst:hover {
+  opacity: 1;
+}
+
+.vk:active,
+.fb:active,
+.inst:active {
+  opacity: 0,2;
+}
+
+.main-footer__text-bold {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.main-footer__text-sale {
+  line-height: 22px;
+  color: #444444;
+}
+
+/*MODAL ============================================================================================================================================================================================================================================================================================================================================================================================================*/
+
+.modal h3 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500px;
+  color: #000000;
+}
+
+.modal p {
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+.modal__input,
+.modal textarea {
+  border: 2px solid #d7dcde;
+}
+
+.modal__input:hover
+.modal textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+.modal__input:focus,
+.modal textarea:focus {
+  border: 2px solid #000000;
+}
+
+.modal input,
+.modal textarea {
+  outline: 0;
+}
+
+.modal__input:invalid {
+  border: 2px solid #e74246;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*INNER PAGE================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================*/
+.products-list {
+  list-style: none;
+}
+
+.paggination-list {
+  list-style: none;
+}
+
+.paggination-list__item {
+  color: #000000;
+  background-color: #eeeeee;
+}
+.paggination-list__item:hover {
+  color: #000000;
+  background-color: #dfdfdf;
+}
+.paggination-list__item:active {
+  color: #b0b0b0;
+  background-color: #d5d5d5;
+}

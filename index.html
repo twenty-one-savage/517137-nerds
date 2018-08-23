@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -34,7 +37,7 @@
       <!-- Здесь будет слайдер, пока напишу первый слайд -->
       <div class="slider">
         <b>Долго, дорого, скрупулезно.</b>
-        <p class="slider__text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+        <p class="slider__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
         <a class="slider__btn btn" href="#" tabindex="0">Узнать больше</a>
       </div>
       <section class="offers">
@@ -44,30 +47,28 @@
             <img class="offers__list-img1" src="img/img-web.jpg" alt="Веб-сайты" width="300" height="146">
             <h3>ВЕБ-САЙТЫ</h3>
             <p class="offers__list-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <button class="offers__list-btn btn" type="button">ЗАКАЗАТЬ</button>
+            <a href="#" class="offers__list-btn-red btn">ЗАКАЗАТЬ</a>
           </li>
           <li class="offers__list-item">
             <img class="offers__list-img2" src="img/img-app.jpg" alt="Приложения" width="300" height="146">
             <h3>ПРИЛОЖЕНИЯ</h3>
             <p class="offers__list-text">Покорите топ-10 приложений в AppStore и Google play!</p>
-            <button class="offers__list-btn btn" type="button">ЗАКАЗАТЬ</button>
+            <a href="#" class="offers__list-btn-green btn">ЗАКАЗАТЬ</a>
           </li>
           <li class="offers__list-item">
             <img class="offers__list-img3" src="img/img-present.jpg" alt="Презентации" width="300" height="146">
             <h3>ПРЕЗЕНТАЦИИ</h3>
             <p class="offers__list-text">Вы даже не подозреваете насколько вы изумительны!</p>
-            <button class="offers__list-btn btn" type="button">ЗАКАЗАТЬ</button>
+            <a href="#" class="offers__list-btn-yellow btn">ЗАКАЗАТЬ</a>
           </li>
         </ul>
       </section>
       <hr>
       <section class="about-us">
         <h3 class="visually-hidden">О нас</h3>
-        <b>Мы-маленькая, но гордая дизайн-студия из Краснодара.</b>
+        <span class="about-us__title">Мы-маленькая, но гордая дизайн-студия из Краснодара.</span>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p>
-          <b>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</b>
-        </p>
+        <span class="about-us__text">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</span>
         <ul class="about-us__list">
           <li class="about-us__list-item">
             <p class="about-us__list-item-text">Веб-сайтов любой сложности</p>
@@ -82,11 +83,15 @@
         </ul>
         <img class="about-us__img" src="img/nerds-illustration.png" alt="Логотип Нёрдс " width="360" height="208">
         <p class="about-us__text">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЁМ:</p>
-        <table>
+        <table class="indicators">
           <tr>
-            <td>146%</td>
-            <td>100%</td>
-            <td>50%</td>
+            <td>
+              <span class="indicators__numeric">146</span>
+              <span class="indicators__percent">%</span></td>
+            <td>
+              <span class="indicators__numeric">100</span><span class="indicators__percent">%</span></td>
+            <td>
+              <span class="indicators__numeric">50</span><span class="indicators__percent">%</span></td>
           </tr>
           <tr>
             <td>Уровень самоотдачи</td>
@@ -123,8 +128,12 @@
       <img class="main-footer__map" src="img/map.jpg" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.: +7(812) 275-75-75" width="1440" height="416">
       <section class="main-footer__address">
         <h3 class="visually-hidden">Контактная информация</h3>
-        <b>NЁRDS DESIGN STUDIO</b>
-        <p class="main-footer__address-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.: +7(812) 275-75-75</p>
+        <span class="main-footer__address-title">NЁRDS DESIGN STUDIO</span>
+        <p class="main-footer__address-text">
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+          <span class="main-footer__address-phone">тел.: +7(812) 275-75-75</span>
+        </p>
         <a class="main-footer__address-btn btn">НАПИШИТЕ НАМ</a>
       </section>
       <!-- ЕСТЬ ВОПРОСЫ================================================================================================================================================================================================================= -->
@@ -144,18 +153,30 @@
         </ul>
 
         <p class="main-footer__text">
-          <b>Давайте дружить, это выгодно!</b>
-          Скидка 10% для друзей из социальных сетей.
+          <span class="main-footer__text-bold">Давайте дружить, это выгодно!</span>
+          <span class="main-footer__text-sale">Скидка 10% для друзей из социальных сетей.</span>
         </p>
       </footer>
       <section class="modal">
-        <h3 class="visually-hidden">Напишите нам:</h3>
-        <p>Ваше имя:</p>
-        <input class="modal__input" name="name" placeholder="Имя Фамилия">
-        <p>Ваш e-mail:</p>
-        <input class="modal__input" type="email" name="email" placeholder="email@example.com">
-        <p>Текст письма:</p>
-        <textarea>В свободной форме</textarea>
+        <h3>Напишите нам:</h3>
+        <p>
+          <label for="name-field">
+            <p>Ваше имя:</p>
+          </label>
+          <input class="modal__input" name="name" id="name-field" placeholder="Имя Фамилия" autocomplete="on">
+        </p>
+        <p>
+          <label for="email-field">
+            <p>Ваш e-mail:</p>
+          </label>
+          <input class="modal__input" type="email" name="email" id="email-field" placeholder="email@example.com" autocomplete="on">
+        </p>
+        <p>
+          <label for="text-field">
+            <p>Текст письма:</p>
+          </label>
+          <textarea id="text-field" placeholder="В свободной форме"></textarea>
+        </p>
         <button class="modal__btn btn">Отправить</button>
         <button class="modal__close" type="button">X</button>
 
