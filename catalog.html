@@ -7,181 +7,179 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
+    <div class="container">
+      <header class="main-header">
+        <nav class="main-header__main-navigation">
+          <img class="main-header__logo" src="img/nerds-logo.svg" alt="Логотип дизайн студии Нёрдс" width="160" height="65">
+          <ul class="main-header__site-navigation">
+            <li class="site-navigation__item">
+              <a class="site-navigation__a" href="#" tabindex="1">Студия</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__a" href="#" tabindex="1">Клиенты</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__a" href="catalog.html" tabindex="1">Магазин</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__a" href="#" tabindex="1">Контакты</a>
+            </li>
+          </ul>
+          <ul class="main-header__user-navigation">
+            <li class="user-navigation__item">
+              <a class="user-navigation__a" href="#" tabindex="0">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+        <h1>Магазин готовых шаблонов</h1>
+      </header>
 
-    <header class="main-header">
-      <a href="index.html">
-        <img class="main-header__logo" src="img/nerds-logo.svg" alt="Логотип дизайн студии Нёрдс" width="160" height="65">
-      </a>
-      <ul class="main-header__site-navigation">
-        <li class="site-navigation__item">
-          <a class="site-navigation__a" href="#">Студия</a>
-        </li>
-        <li class="site-navigation__item">
-          <a class="site-navigation__a" href="#">Клиенты</a>
-        </li>
-        <li class="site-navigation__item">
-          <a class="site-navigation__a" href="catalog.html">Магазин</a>
-        </li>
-        <li class="site-navigation__item">
-          <a class="site-navigation__a" href="#">Контакты</a>
-        </li>
-      </ul>
-      <ul class="main-header__user-navigation">
-        <li class="user-navigation__item">
-          <a class="user-navigation__a" href="#">Корзина</a>
-        </li>
-      </ul>
-    </header>
+      <main>
+        <div class="inner-page__wrapper">
+          <section class="filters">
+            <h3 class="visually-hidden">Фильтр товаров</h3>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <p class="filters__price">СТОИМОСТЬ:</p>
+              <!--Здесь будет форма, ЭТУ ФОРМУ НУЖНО ДЕЛАТЬ ЧЕРЕЗ JS-->
+              <input type="range">
+              <span class="price">ОТ</span>
+              <div class="price-wrapper">0</div>
+              <span class="price">ДО</span>
+              <div class="price-wrapper">15 000</div>
+              <p class="filters__net">СЕТКА:</p>
+              <ul class="filters__net-list">
+                <li>
+                  <input type="radio" name="grid" value="adaptive" id="adaptive-field" checked="checked">
+                  <label for="adaptive-field">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="grid" value="fix" id="fix-field">
+                  <label for="fix-field">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="grid" value="rubber" id="rubber-field">
+                  <label for="rubber-field">Резиновая</label>
+                </li>
+              </ul>
+              <p class="filters__especially">ОСОБЕННОСТИ:</p>
+              <ul class="filters__especially-list">
+                <li>
+                  <input type="checkbox" name="slider" id="slider-field" checked="checked">
+                  <label for="slider-field">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="advantage" id="advantage-field">
+                  <label for="advantage-field">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="news" id="news-field">
+                  <label for="news-field">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="gallery" id="gallery-field">
+                  <label for="gallery-field">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="bucket" id="bucket-field">
+                  <label for="bucket-field">Корзина</label>
+                </li>
+              </ul>
+              <button class="filters__btn btn">ПОКАЗАТЬ</button>
+            </form>
+          </section>
+          <section class="products">
+            <div class="sorting-wrapper">
+              <p class="sorting">СОРТИРОВАТЬ:</p>
+              <p class="by-price">ПО ЦЕНЕ</p>
+              <p class="by-type">ПО ТИПУ</p>
+              <p class="by-name">ПО НАЗВАНИЮ</p>
+              <!--Здесь стрелочки вверх и вниз-->
+            </div>
+            <ul class="products__list">
+              <li class="products__list-item">
+                <a>
+                  <img src="img/img-sedona.jpg" alt="Веб-сайт SEDONA" width="360" height="576" aria-label="Веб-сайт с туристическим назначением">
+                </a>
+              </li>
+              <li class="products__list-item">
+                <a>
+                  <img src="img/img-pink.jpg" alt="Веб-сайт PINK" width="360" height="576" aria-label="Приложение для смартфонов, развлекательного характера">
+                </a>
+              </li>
+              <li class="products__list-item">
+                <a>
+                  <img src="img/img-barbershop.jpg" alt="Веб-сайт Barbershop" width="360" height="576" aria-label="Интернет-магазин по продаже мужских средств для ухода">
+                </a>
+              </li>
+              <li class="products__list-item">
+                <a>
+                  <img src="img/img-mishka.jpg" alt="Веб-сайт MiSHKA" width="360" height="576" aria-label="Интернет-магазин ручной продукции для дома">
+                </a>
+              </li>
+              <li class="products__list-item">
+                <a>
+                  <img src="img/img-aplus.jpg" alt="Веб-сайт APLUS" width="360" height="576" aria-label="Веб-сайт с учебными материалами">
+                </a>
+              </li>
+              <li class="products__list-item">
+                <a>
+                  <img src="img/img-kvast.jpg" alt="Веб-сайт KVAST" width="360" height="576" aria-label="Интернет-магазин со слабоалкогольной продукцией">
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="paggination-wrapper">
+          <ul class="paggination-list">
+            <a>
+              <li class="paggination-list__item" tabindex="1" aria-label="Первая страница магазина">1</li>
+            </a>
+            <a>
+              <li class="paggination-list__item" tabindex="1" aria-label="Вторая страница магазина">2</li>
+            </a>
+            <a/>
+            <li class="paggination-list__item" tabindex="1" aria-label="Третья страница магазина">3</li>
+          </a>
+        </ul>
+        <a class="paggination-list__btn btn">СЛЕДУЮЩАЯ</a>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <img class="main-footer__map" src="img/map.jpg" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.: +7(812) 275-75-75" width="1440" height="416">
+      <section class="main-footer__address">
+        <h3 class="visually-hidden">Контактная информация</h3>
+        <span class="main-footer__address-title">NЁRDS DESIGN STUDIO</span>
+        <p class="main-footer__address-text">
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+          <span class="main-footer__address-phone">тел.: +7(812) 275-75-75</span>
+        </p>
+        <a class="main-footer__address-btn btn">НАПИШИТЕ НАМ</a>
+      </section>
+      <!-- ЕСТЬ ВОПРОСЫ================================================================================================================================================================================================================= -->
+      <div class="main-footer__wrapper">
+        <ul class="main-footer__social-list">
+          <li class="social-list-item">
+            <a class="vk" href="https://www.vk.com">
+              <span class="visually-hidden">Мы в Вконтакте</span></a>
+          </li>
+          <li class="social-list-item">
+            <a class="fb" href="https://www.facebook.com">
+              <span class="visually-hidden">Мы в Фейсбуке</a>
+            </li>
+            <li class="social-list-item">
+              <a class="inst" href="https://www.instagram.com">
+                <span class="visually-hidden">Мы в Инстаграме</span></a>
+            </li>
+          </ul>
 
-    <main>
-      <h1>Магазин готовых шаблонов</h2>
-      <div class="filters">
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <p class="filters__price">СТОИМОСТЬ:</p>
-          <!--Здесь будет форма, ЭТУ ФОРМУ НУЖНО ДЕЛАТЬ ЧЕРЕЗ JS-->
-          <input type="range">
-          <span class="price">ОТ</span>
-          <div class="price-wrapper">0</div>
-          <span class="price">ДО</span>
-          <div class="price-wrapper">15 000</div>
-          <p class="filters__net">СЕТКА:</p>
-          <!--Здесь будет форма-->
-          <p>
-            <label for="adaptive-field">
-              <input type="radio" name="grid" value="adaptive" id="adaptive-field" checked="checked">
-              Адаптивная
-            </label>
+          <p class="main-footer__text">
+            <span class="main-footer__tagline">Давайте дружить, это выгодно!</span><br>
+            <span class="main-footer__sale">Скидка 10% для друзей из социальных сетей.</span>
           </p>
-          <p>
-            <label for="fix-field">
-              <input type="radio" name="grid" value="fix" id="fix-field">
-              Фиксированная
-            </label>
-          </p>
-          <p>
-            <label for="rubber-field">
-              <input type="radio" name="grid" value="rubber" id="rubber-field">
-              Резиновая
-            </label>
-          </p>
-          <p class="filters__especially">ОСОБЕННОСТИ:</p>
-          <p>
-            <label for="slider-field">
-              <input type="checkbox" name="slider" id="slider-field" checked="checked">
-              Слайдер
-            </label>
-          </p>
-          <p>
-            <label for="advantage-field">
-              <input type="checkbox" name="advantage" id="advantage-field">
-              Блок преимуществ
-            </label>
-          </p>
-          <p>
-            <label for="news-field">
-              <input type="checkbox" name="news" id="news-field">
-              Новости
-            </label>
-          </p>
-          <p>
-            <label for="gallery-field">
-              <input type="checkbox" name="gallery" id="gallery-field">
-              Галерея
-            </label>
-          </p>
-          <p>
-            <label for="bucket-field">
-              <input type="checkbox" name="bucket" id="bucket-field">
-              Корзина
-            </label>
-          </p>
-          <button class="filters__btn btn">ПОКАЗАТЬ</button>
-        </form>
-      </div>
-      <div class="sorting-wrapper">
-        <p class="sorting">СОРТИРОВКА:</p>
-        <p class="by-price">ПО ЦЕНЕ</p>
-        <p class="by-type">ПО ТИПУ</p>
-        <p class="by-name">ПО НАЗВАНИЮ</p>
-        <!--Здесь стрелочки вверх и вниз-->
-      </div>
-      <ul class="products-list">
-        <li class="products-list__item-1">
-          <a>
-            <img src="img/img-sedona.jpg" alt="Веб-сайт SEDONA" width="360" height="576" aria-label="Веб-сайт с туристическим назначением">
-          </a>
-        </li>
-        <li class="products-list__item-2">
-          <a>
-            <img src="img/img-pink.jpg" alt="Веб-сайт PINK" width="360" height="576" aria-label="Приложение для смартфонов, развлекательного характера">
-          </a>
-        </li>
-        <li class="products-list__item-3">
-          <a>
-            <img src="img/img-barbershop.jpg" alt="Веб-сайт Barbershop" width="360" height="576" aria-label="Интернет-магазин по продаже мужских средств для ухода">
-          </a>
-        </li>
-        <li class="products-list__item-4">
-          <a>
-            <img src="img/img-mishka.jpg" alt="Веб-сайт MiSHKA" width="360" height="576" aria-label="Интернет-магазин ручной продукции для дома">
-          </a>
-        </li>
-        <li class="products-list__item-5">
-          <a>
-            <img src="img/img-aplus.jpg" alt="Веб-сайт APLUS" width="360" height="576" aria-label="Веб-сайт с учебными материалами">
-          </a>
-        </li>
-        <li class="products-list__item-6">
-          <a>
-            <img src="img/img-kvast.jpg" alt="Веб-сайт KVAST" width="360" height="576" aria-label="Интернет-магазин со слабоалкогольной продукцией">
-          </a>
-        </li>
-      </ul>
-      <div class="paggination-wrapper">
-        <ul class="paggination-list">
-          <a>
-            <li class="paggination-list__item" tabindex="1" aria-label="Первая страница магазина">1</li>
-          </a>
-          <a>
-            <li class="paggination-list__item" tabindex="1" aria-label="Вторая страница магазина">2</li>
-          </a>
-          <a/>
-          <li class="paggination-list__item" tabindex="1" aria-label="Третья страница магазина">3</li>
-        </a>
-      </ul>
-      <a class="paggination-list__btn btn">СЛЕДУЮЩАЯ</a>
+        </div>
+      </footer>
     </div>
-  </main>
-  <footer class="main-footer">
-    <img class="main-footer__map" src="img/map.jpg" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.: +7(812) 275-75-75" width="1440" height="416">
-    <section class="main-footer__address">
-      <h3 class="visually-hidden">Контактная информация</h3>
-      <b>NЁRDS DESIGN STUDIO</b>
-      <p class="main-footer__address-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.: +7(812) 275-75-75</p>
-      <a class="main-footer__address-btn btn">НАПИШИТЕ НАМ</a>
-    </section>
-    <!-- ЕСТЬ ВОПРОСЫ================================================================================================================================================================================================================= -->
-    <ul class="main-footer__social-list">
-      <li class="social-list-item">
-        <a class="vk" href="https://www.vk.com">
-          <span class="visually-hidden">Мы в Вконтакте</span></a>
-      </li>
-      <li class="social-list-item">
-        <a class="fb" href="https://www.facebook.com">
-          <span class="visually-hidden">Мы в Фейсбуке</a>
-        </li>
-        <li class="social-list-item">
-          <a class="inst" href="https://www.instagram.com">
-            <span class="visually-hidden">Мы в Инстаграме</span></a>
-        </li>
-      </ul>
-
-      <p class="main-footer__text">
-        <b>Давайте дружить, это выгодно!</b>
-        Скидка 10% для друзей из социальных сетей.
-      </p>
-    </footer>
-
   </body>
 </html>
