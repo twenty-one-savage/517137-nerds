@@ -8,92 +8,112 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-page">
-    <div class="container">
-      <header class="main-header">
-        <nav class="main-header__main-navigation">
-          <img class="main-header__logo" src="img/nerds-logo.svg" alt="Логотип дизайн студии Нёрдс" width="160" height="65">
-          <ul class="main-header__site-navigation">
-            <li class="site-navigation__item">
-              <a class="site-navigation__a" href="#" tabindex="1">Студия</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__a" href="#" tabindex="1">Клиенты</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__a" href="catalog.html" tabindex="1">Магазин</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__a" href="#" tabindex="1">Контакты</a>
-            </li>
-          </ul>
-          <ul class="main-header__user-navigation">
-            <li class="user-navigation__item">
-              <a class="user-navigation__a" href="#" tabindex="0">Корзина</a>
-            </li>
-          </ul>
-        </nav>
-        <h1>Магазин готовых шаблонов</h1>
-      </header>
-
-      <main>
-        <div class="inner-page__wrapper">
+    <header class="main-header">
+      <nav class="main-header__main-navigation">
+        <a href="index.html">
+          <img class="main-header__logo" src="img/nerds-logo.svg" alt="Логотип дизайн студии Нёрдс" width="160" height="65" tabindex="1">
+        </a>
+        <ul class="main-header__site-navigation">
+          <li class="site-navigation__item">
+            <a class="site-navigation__a" href="#" tabindex="0">Студия</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__a" href="#" tabindex="0">Клиенты</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__a actual" href="catalog.html" tabindex="0">Магазин</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__a" href="#" tabindex="0">Контакты</a>
+          </li>
+        </ul>
+        <ul class="main-header__user-navigation">
+          <li class="user-navigation__item">
+            <a class="user-navigation__a" href="#" tabindex="0">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Магазин готовых шаблонов</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="inner-page__main-wrapper">
           <section class="filters">
             <h3 class="visually-hidden">Фильтр товаров</h3>
             <form action="https://echo.htmlacademy.ru" method="get">
-              <p class="filters__price">СТОИМОСТЬ:</p>
-              <!--Здесь будет форма, ЭТУ ФОРМУ НУЖНО ДЕЛАТЬ ЧЕРЕЗ JS-->
-              <input type="range">
-              <span class="price">ОТ</span>
-              <div class="price-wrapper">0</div>
-              <span class="price">ДО</span>
-              <div class="price-wrapper">15 000</div>
-              <p class="filters__net">СЕТКА:</p>
+              <p class="filters__price">Стоимость:</p>
+              <div class="filters__range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от
+                    <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до
+                    <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
+              <p class="filters__net">Сетка:</p>
               <ul class="filters__net-list">
                 <li>
-                  <input type="radio" name="grid" value="adaptive" id="adaptive-field" checked="checked">
+                  <input class="visually-hidden" type="radio" name="grid" value="adaptive" id="adaptive-field" checked="checked">
                   <label for="adaptive-field">Адаптивная</label>
                 </li>
                 <li>
-                  <input type="radio" name="grid" value="fix" id="fix-field">
+                  <input class="visually-hidden" type="radio" name="grid" value="fix" id="fix-field">
                   <label for="fix-field">Фиксированная</label>
                 </li>
                 <li>
-                  <input type="radio" name="grid" value="rubber" id="rubber-field">
+                  <input class="visually-hidden" type="radio" name="grid" value="rubber" id="rubber-field">
                   <label for="rubber-field">Резиновая</label>
                 </li>
               </ul>
-              <p class="filters__especially">ОСОБЕННОСТИ:</p>
+              <p class="filters__especially">Особенности:</p>
               <ul class="filters__especially-list">
                 <li>
-                  <input type="checkbox" name="slider" id="slider-field" checked="checked">
+                  <input class="visually-hidden" type="checkbox" name="slider" id="slider-field" checked="checked">
                   <label for="slider-field">Слайдер</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="advantage" id="advantage-field">
+                  <input class="visually-hidden" type="checkbox" name="advantage" id="advantage-field">
                   <label for="advantage-field">Блок преимуществ</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="news" id="news-field">
+                  <input class="visually-hidden" type="checkbox" name="news" id="news-field">
                   <label for="news-field">Новости</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="gallery" id="gallery-field">
+                  <input class="visually-hidden" type="checkbox" name="gallery" id="gallery-field">
                   <label for="gallery-field">Галерея</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="bucket" id="bucket-field">
+                  <input class="visually-hidden" type="checkbox" name="bucket" id="bucket-field">
                   <label for="bucket-field">Корзина</label>
                 </li>
               </ul>
-              <button class="filters__btn btn">ПОКАЗАТЬ</button>
+              <button class="filters__btn btn">Показать</button>
             </form>
           </section>
           <section class="products">
             <div class="sorting-wrapper">
-              <p class="sorting">СОРТИРОВАТЬ:</p>
-              <p class="by-price">ПО ЦЕНЕ</p>
-              <p class="by-type">ПО ТИПУ</p>
-              <p class="by-name">ПО НАЗВАНИЮ</p>
+              <p class="sorting">Сортировать:</p>
+              <a class="by-price current" aria-label="Сортировать продукты по цене" tabindex="0">По цене</a>
+              <a class="by-type" aria-label="Сортировать продукты по типу" tabindex="0">По типу</a>
+              <a class="by-name" aria-label="Сортировать продукты по названию" tabindex="0">По названию</a>
+              <a class="descendingly current" href="#" aria-label="Сортировать продукты по убываюшей цене">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewbox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                  <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+                </svg>
+              </a>
+              <a class="ascendingly" href="#" aria-label="Сортировать продукты по возрастающей цене">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewbox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                  <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+                </svg>
+              </a>
               <!--Здесь стрелочки вверх и вниз-->
             </div>
             <ul class="products__list">
@@ -130,50 +150,74 @@
             </ul>
           </section>
         </div>
-        <div class="paggination-wrapper">
-          <ul class="paggination-list">
-            <a>
-              <li class="paggination-list__item" tabindex="1" aria-label="Первая страница магазина">1</li>
-            </a>
-            <a>
-              <li class="paggination-list__item" tabindex="1" aria-label="Вторая страница магазина">2</li>
-            </a>
-            <a/>
-            <li class="paggination-list__item" tabindex="1" aria-label="Третья страница магазина">3</li>
-          </a>
+        <ul class="paggination-list">
+          <li class="paggination-list__item" tabindex="0" aria-label="Первая страница магазина">
+            <a class="paggination-list__item-number current">1</a>
+          </li>
+          <li class="paggination-list__item" tabindex="0" aria-label="Вторая страница магазина">
+            <a class="paggination-list__item-number">2</a>
+          </li>
+          <li class="paggination-list__item" tabindex="0" aria-label="Третья страница магазина">
+            <a class="paggination-list__item-number">3</a>
+          </li>
+          <li class="paggination-list__item" tabindex="0" aria-label="Следующая страница магазина">
+            <a class="paggination-list__item-nextpage">Следующая</a>
+          </li>
         </ul>
-        <a class="paggination-list__btn btn">СЛЕДУЮЩАЯ</a>
       </div>
     </main>
     <footer class="main-footer">
-      <img class="main-footer__map" src="img/map.jpg" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.: +7(812) 275-75-75" width="1440" height="416">
-      <section class="main-footer__address">
-        <h3 class="visually-hidden">Контактная информация</h3>
-        <span class="main-footer__address-title">NЁRDS DESIGN STUDIO</span>
-        <p class="main-footer__address-text">
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br>
-          <span class="main-footer__address-phone">тел.: +7(812) 275-75-75</span>
-        </p>
-        <a class="main-footer__address-btn btn">НАПИШИТЕ НАМ</a>
-      </section>
-      <!-- ЕСТЬ ВОПРОСЫ================================================================================================================================================================================================================= -->
-      <div class="main-footer__wrapper">
-        <ul class="main-footer__social-list">
-          <li class="social-list-item">
-            <a class="vk" href="https://www.vk.com">
-              <span class="visually-hidden">Мы в Вконтакте</span></a>
-          </li>
-          <li class="social-list-item">
-            <a class="fb" href="https://www.facebook.com">
-              <span class="visually-hidden">Мы в Фейсбуке</a>
+      <img class="main-footer__map" src="img/map-min.jpg" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.: +7(812) 275-75-75" width="1440px" height="416px">
+      <div class="container">
+        <div class="main-footer__map-marker"></div>
+        <section class="main-footer__address">
+          <h3 class="visually-hidden">Контактная информация</h3>
+          <span class="main-footer__address-title">Nёrds design studio</span>
+          <p class="main-footer__address-text">
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8<br>
+            <span class="main-footer__address-phone">тел.: +7(812) 275-75-75</span>
+          </p>
+          <a class="main-footer__address-btn btn" tabindex="0">Напишите нам</a>
+        </section>
+        <div class="main-footer__wrapper">
+          <ul class="main-footer__social-list">
+            <li class="social-list-item">
+              <a class="social-button vk" href="https://www.vk.com">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="15px" viewbox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
+                  <path
+                    fill="#FFFFFF"
+                    d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
+                  	c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
+                  	c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515
+                  	c-0.003,0.004-0.621,1.666-1.445,3.079c-1.741,2.989-2.436,3.148-2.724,2.961c-0.661-0.433-0.494-1.737-0.494-2.664
+                  	c0-2.897,0.432-4.105-0.846-4.417c-0.427-0.104-0.739-0.172-1.828-0.182c-1.392-0.021-2.574,0-3.244,0.329
+                  	c-0.445,0.223-0.786,0.712-0.579,0.74c0.26,0.035,0.843,0.16,1.155,0.586c0.401,0.552,0.389,1.789,0.389,1.789
+                  	s0.229,3.411-0.54,3.834c-0.528,0.29-1.25-0.302-2.803-3.016C6.087,2.879,5.488,1.345,5.488,1.345S5.372,1.06,5.162,0.904
+                  	C4.912,0.719,4.562,0.66,4.562,0.66L0.848,0.684c0,0-0.558,0.016-0.763,0.262C-0.097,1.164,0.07,1.614,0.07,1.614
+                  	s2.909,6.881,6.203,10.347c3.02,3.182,6.452,2.971,6.452,2.971h1.555c0,0,0.469-0.054,0.709-0.312
+                  	c0.224-0.24,0.214-0.691,0.214-0.691S15.172,11.82,16.138,11.51z"/>
+                </svg>
+              </a>
             </li>
             <li class="social-list-item">
-              <a class="inst" href="https://www.instagram.com">
-                <span class="visually-hidden">Мы в Инстаграме</span></a>
+              <a class="social-button fb" href="https://www.facebook.com">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+                <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px" viewbox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
+                  <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-button inst" href="https://www.instagram.com">
+                <span class="visually-hidden">Мы в Инстаграме</span>
+                <svg enable-background="new 0 0 21 21" height="21" viewbox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path
+                  d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z"
+                  fill="#fff"/></svg>
+              </a>
             </li>
           </ul>
-
           <p class="main-footer__text">
             <span class="main-footer__tagline">Давайте дружить, это выгодно!</span><br>
             <span class="main-footer__sale">Скидка 10% для друзей из социальных сетей.</span>
