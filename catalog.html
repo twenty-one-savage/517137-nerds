@@ -11,7 +11,7 @@
     <header class="main-header">
       <nav class="main-header__main-navigation">
         <a href="index.html">
-          <img class="main-header__logo" src="img/nerds-logo.svg" alt="Логотип дизайн студии Нёрдс" width="160" height="65" tabindex="1">
+          <img class="main-header__logo" src="img/nerds-logo.png" alt="Логотип дизайн студии Нёрдс" width="160" height="65" tabindex="1">
         </a>
         <ul class="main-header__site-navigation">
           <li class="site-navigation__item">
@@ -59,40 +59,80 @@
               </div>
               <p class="filters__net">Сетка:</p>
               <ul class="filters__net-list">
-                <li>
-                  <input class="visually-hidden" type="radio" name="grid" value="adaptive" id="adaptive-field" checked="checked">
-                  <label for="adaptive-field">Адаптивная</label>
+                <li class="net-list__item">
+                  <!--Здесь используется инпут для того,чтобы задать состояние disabled всему элементу списка, если у вас есть свой вариант и проще, то напишите мне, пожалуйста -->
+                  <input class="visually-hidden" type="range">
+                  <label class="checkbox">
+                    <input class="visually-hidden" type="radio" name="grid" value="adaptive" checked="checked">
+                    <span class="checkbox-indicator"></span>
+                    Адаптивная
+                  </label>
                 </li>
-                <li>
-                  <input class="visually-hidden" type="radio" name="grid" value="fix" id="fix-field">
-                  <label for="fix-field">Фиксированная</label>
+                <li class="net-list__item">
+                  <!--Здесь используется инпут для того,чтобы задать состояние disabled всему элементу списка, если у вас есть свой вариант и проще, то напишите мне, пожалуйста -->
+                  <input class="visually-hidden" type="range">
+                  <label class="checkbox">
+                    <input class="visually-hidden" type="radio" name="grid" value="fix">
+                    <span class="checkbox-indicator"></span>
+                    Фиксированная
+                  </label>
                 </li>
-                <li>
-                  <input class="visually-hidden" type="radio" name="grid" value="rubber" id="rubber-field">
-                  <label for="rubber-field">Резиновая</label>
+                <li class="net-list__item">
+                  <!--Здесь используется инпут для того,чтобы задать состояние disabled всему элементу списка, если у вас есть свой вариант и проще, то напишите мне, пожалуйста -->
+                  <input class="visually-hidden" type="range" disabled="disabled">
+                  <label class="checkbox">
+                    <input class="visually-hidden" type="radio" name="grid" value="rubber" disabled="disabled">
+                    <span class="checkbox-indicator"></span>
+                    Резиновая
+                  </label>
                 </li>
               </ul>
               <p class="filters__especially">Особенности:</p>
               <ul class="filters__especially-list">
-                <li>
-                  <input class="visually-hidden" type="checkbox" name="slider" id="slider-field" checked="checked">
-                  <label for="slider-field">Слайдер</label>
+                <li class="especially-list__item">
+                  <!--Здесь используется инпут для того,чтобы задать состояние disabled всему элементу списка, если у вас есть свой вариант и проще, то напишите мне, пожалуйста -->
+                  <input class="visually-hidden" type="range">
+                  <label class="checkbox">
+                    <input class="visually-hidden" type="checkbox" name="slider" checked="checked">
+                    <span class="checkbox-indicator"></span>
+                    Слайдер
+                  </label>
                 </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox" name="advantage" id="advantage-field">
-                  <label for="advantage-field">Блок преимуществ</label>
+                <li class="especially-list__item">
+                  <!--Здесь используется инпут для того,чтобы задать состояние disabled всему элементу списка, если у вас есть свой вариант и проще, то напишите мне, пожалуйста -->
+                  <input class="visually-hidden" type="range" disabled="disabled">
+                  <label class="checkbox">
+                    <input class="visually-hidden" type="checkbox" name="advantage" disabled="disabled">
+                    <span class="checkbox-indicator"></span>
+                    Блок преимуществ
+                  </label>
                 </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox" name="news" id="news-field">
-                  <label for="news-field">Новости</label>
+                <li class="especially-list__item">
+                  <!--Здесь используется инпут для того,чтобы задать состояние disabled всему элементу списка, если у вас есть свой вариант и проще, то напишите мне, пожалуйста -->
+                  <input class="visually-hidden" type="range">
+                  <label class="checkbox">
+                    <input class="visually-hidden" type="checkbox" name="news" checked="checked">
+                    <span class="checkbox-indicator"></span>
+                    Новости
+                  </label>
                 </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox" name="gallery" id="gallery-field">
-                  <label for="gallery-field">Галерея</label>
+                <li class="especially-list__item">
+                  <!--Здесь используется инпут для того,чтобы задать состояние disabled всему элементу списка, если у вас есть свой вариант и проще, то напишите мне, пожалуйста -->
+                  <input class="visually-hidden" type="range">
+                  <label class="checkbox">
+                    <input class="visually-hidden" type="checkbox" name="gallery">
+                    <span class="checkbox-indicator"></span>
+                    Галерея
+                  </label>
                 </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox" name="bucket" id="bucket-field">
-                  <label for="bucket-field">Корзина</label>
+                <li class="especially-list__item">
+                  <!--Здесь используется инпут для того,чтобы задать состояние disabled всему элементу списка, если у вас есть свой вариант и проще, то напишите мне, пожалуйста -->
+                  <input class="visually-hidden" type="range">
+                  <label class="checkbox">
+                    <input class="visually-hidden" type="checkbox" name="bucket">
+                    <span class="checkbox-indicator"></span>
+                    Корзина
+                  </label>
                 </li>
               </ul>
               <button class="filters__btn btn">Показать</button>
@@ -114,38 +154,79 @@
                   <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
                 </svg>
               </a>
-              <!--Здесь стрелочки вверх и вниз-->
             </div>
             <ul class="products__list">
               <li class="products__list-item">
-                <a>
-                  <img src="img/img-sedona.jpg" alt="Веб-сайт SEDONA" width="360" height="576" aria-label="Веб-сайт с туристическим назначением">
+                <a href="#">
+                  <img src="img/img-sedona.jpg" alt="Веб-сайт SEDONA" width="360" height="576" aria-label="Информационный сайт для туристов">
                 </a>
+                <div class="hover__wrapper">
+                  <div class="hover">
+                    <h3 class="hover__title">Sedona</h3>
+                    <p class="hover__text">Информационный сайт для туристов</p>
+                    <a class="hover__btn btn" href="#">9 900 руб.</a>
+                  </div>
+                </div>
               </li>
               <li class="products__list-item">
-                <a>
-                  <img src="img/img-pink.jpg" alt="Веб-сайт PINK" width="360" height="576" aria-label="Приложение для смартфонов, развлекательного характера">
+                <a href="#">
+                  <img src="img/img-pink.jpg" alt="Веб-сайт PINK" width="360" height="576" aria-label="Продуктовый лендинг приложения для iOS и Android">
                 </a>
+                <div class="hover__wrapper">
+                  <div class="hover">
+                    <h3 class="hover__title">Pink app</h3>
+                    <p class="hover__text">Продуктовый лендинг приложения для iOS и Android</p>
+                    <a class="hover__btn btn" href="#">9 900 руб.</a>
+                  </div>
+                </div>
               </li>
               <li class="products__list-item">
-                <a>
-                  <img src="img/img-barbershop.jpg" alt="Веб-сайт Barbershop" width="360" height="576" aria-label="Интернет-магазин по продаже мужских средств для ухода">
+                <a href="#">
+                  <img src="img/img-barbershop.jpg" alt="Веб-сайт Barbershop" width="360" height="576" aria-label="Сайт салона красоты. Для мужчин, да.">
                 </a>
+                <div class="hover__wrapper">
+                  <div class="hover">
+                    <h3 class="hover__title">Barbershop</h3>
+                    <p class="hover__text">Сайт салона красоты. Для мужчин, да.</p>
+                    <a class="hover__btn btn" href="#">9 900 руб.</a>
+                  </div>
+                </div>
               </li>
               <li class="products__list-item">
-                <a>
-                  <img src="img/img-mishka.jpg" alt="Веб-сайт MiSHKA" width="360" height="576" aria-label="Интернет-магазин ручной продукции для дома">
+                <a href="#">
+                  <img src="img/img-mishka.jpg" alt="Веб-сайт MiSHKA" width="360" height="576" aria-label="Интернет-магазин вязаных игрушек">
                 </a>
+                <div class="hover__wrapper">
+                  <div class="hover">
+                    <h3 class="hover__title">Mishka</h3>
+                    <p class="hover__text">Интернет-магазин вязаных игрушек</p>
+                    <a class="hover__btn btn" href="#">9 900 руб.</a>
+                  </div>
+                </div>
               </li>
               <li class="products__list-item">
-                <a>
-                  <img src="img/img-aplus.jpg" alt="Веб-сайт APLUS" width="360" height="576" aria-label="Веб-сайт с учебными материалами">
+                <a href="#">
+                  <img src="img/img-aplus.jpg" alt="Веб-сайт APLUS" width="360" height="576" aria-label="Лендинг курсов повышения квалификации">
                 </a>
+                <div class="hover__wrapper">
+                  <div class="hover">
+                    <h3 class="hover__title">A plus</h3>
+                    <p class="hover__text">Лендинг курсов повышения квалификации</p>
+                    <a class="hover__btn btn" href="#">9 900 руб.</a>
+                  </div>
+                </div>
               </li>
               <li class="products__list-item">
-                <a>
-                  <img src="img/img-kvast.jpg" alt="Веб-сайт KVAST" width="360" height="576" aria-label="Интернет-магазин со слабоалкогольной продукцией">
+                <a href="#">
+                  <img src="img/img-kvast.jpg" alt="Веб-сайт KVAST" width="360" height="576" aria-label="Промо-сайт производителя крафтового класса">
                 </a>
+                <div class="hover__wrapper">
+                  <div class="hover">
+                    <h3 class="hover__title">Kvast</h3>
+                    <p class="hover__text">Промо-сайт производителя крафтового класса</p>
+                    <a class="hover__btn btn" href="#">9 900 руб.</a>
+                  </div>
+                </div>
               </li>
             </ul>
           </section>
@@ -224,6 +305,42 @@
           </p>
         </div>
       </footer>
+      <section class="modal modal-feedback">
+          <h3 class="modal__title">Напишите нам:</h3>
+          <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+            <p>
+              <label for="name-field">Ваше имя:</label>
+              <input class="modal__input" name="name" id="name-field" placeholder="Имя Фамилия" autocomplete="on">
+            </p>
+            <p>
+              <label for="email-field">Ваш e-mail:</label>
+              <input class="modal__input" type="email" name="email" id="email-field" placeholder="email@example.com" autocomplete="on">
+            </p>
+            <p>
+              <label for="text-field">Текст письма:</label>
+              <textarea id="text-field" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="modal__btn btn">Отправить</button>
+            <button class="modal__close" type="button">Закрыть</button>
+          </form>
+      </section>
     </div>
+    <script>
+      var link = document.querySelector(".main-footer__address-btn");
+      var popup = document.querySelector(".modal");
+      var close = document.querySelector(".modal__close");
+      var login = popup.querySelector(".modal__input");
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        login.focus();
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+      });
+    </script>
   </body>
 </html>

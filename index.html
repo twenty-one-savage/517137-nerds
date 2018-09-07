@@ -12,7 +12,7 @@
 
     <header class="main-header">
       <nav class="main-header__main-navigation">
-        <img class="main-header__logo" src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс" width="160px" height="65px" tabindex="1">
+        <img class="main-header__logo" src="img/nerds-logo.png" alt="Логотип дизайн-студии Нёрдс" width="160px" height="65px" tabindex="1">
         <ul class="main-header__site-navigation">
           <li class="site-navigation__item">
             <a class="site-navigation__a" href="#" tabindex="1">Студия</a>
@@ -215,24 +215,42 @@
       </footer>
       <!--Модальное окно
       ================================================================================================================================================================================================================================================================================================================================================================================================================-->
-      <section class="modal">
-        <h3 class="visually-hidden">Модальное окно обратной связи</h3>
-        <span class="modal__title">Напишите нам:</span>
-        <p class="modal__wrapper">
-          <label for="name-field">Ваше имя:</label>
-          <input class="modal__input" name="name" id="name-field" placeholder="Имя Фамилия" autocomplete="on">
-        </p>
-        <p class="modal__wrapper">
-          <label for="email-field">Ваш e-mail:</label>
-          <input class="modal__input" type="email" name="email" id="email-field" placeholder="email@example.com" autocomplete="on">
-        </p>
-        <p class="modal__wrapper">
-          <label for="text-field">Текст письма:</label>
-          <textarea id="text-field" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="modal__btn btn">Напишите нам</button>
-        <button class="modal__close" type="button">Закрыть</button>
+      <section class="modal modal-feedback">
+        <h3 class="modal__title">Напишите нам:</h3>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+          <p>
+            <label for="name-field">Ваше имя:</label>
+            <input class="modal__input" name="name" id="name-field" placeholder="Имя Фамилия" autocomplete="on">
+          </p>
+          <p>
+            <label for="email-field">Ваш e-mail:</label>
+            <input class="modal__input" type="email" name="email" id="email-field" placeholder="email@example.com" autocomplete="on">
+          </p>
+          <p>
+            <label for="text-field">Текст письма:</label>
+            <textarea id="text-field" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="modal__btn btn">Отправить</button>
+          <button class="modal__close" type="button">Закрыть</button>
+        </form>
       </section>
     </div>
+    <script>
+      var link = document.querySelector(".main-footer__address-btn");
+      var popup = document.querySelector(".modal");
+      var close = document.querySelector(".modal__close");
+      var login = popup.querySelector(".modal__input");
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        login.focus();
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+      });
+    </script>
   </body>
 </html>
