@@ -2,68 +2,70 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
-
-    <header class="main-header">
-      <nav class="main-header__main-navigation">
-        <img class="main-header__logo" src="img/nerds-logo.png" alt="Логотип дизайн-студии Нёрдс" width="160px" height="65px" tabindex="1">
-        <ul class="main-header__site-navigation">
-          <li class="site-navigation__item">
-            <a class="site-navigation__a" href="#" tabindex="1">Студия</a>
-          </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__a" href="#" tabindex="1">Клиенты</a>
-          </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__a" href="catalog.html" tabindex="1">Магазин</a>
-          </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__a" href="#" tabindex="1">Контакты</a>
-          </li>
-        </ul>
-        <ul class="main-header__user-navigation">
-          <li class="user-navigation__item">
-            <a class="user-navigation__a" href="#" tabindex="0">Корзина</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Здесь будет слайдер, пока напишу первый слайд -->
-      <section class="slider">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <div class="slider-controls">
-          <label for="advantage-1">Первый</label>
-          <label for="advantage-2">Второй</label>
-          <label for="advantage-3">Третий</label>
-        </div>
-        <ul class="slider-list">
-          <li class="slider-list__item" id="slide-1">
-            <h3>Долго, дорого,<br>
-              скрупулезно.</h3>
-            <p>Математически выверенный дизайн<br>
-              для вашего сайта или мобильного приложения.</p>
-            <a class="slider-list__item-btn btn" href="#">Узнать больше</a>
-          </li>
-          <li class="slider-list__item" id="slide-2">
-            <h3>Любим математику как никто другой</h3>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="slider-list__item-btn btn" href="#">Узнать больше</a>
-          </li>
-          <li class="slider-list__item" id="slide-3">
-            <h3>Только ночь,<br>
-              только хардкор</h3>
-            <p>Работать днем, как все? Мы против этого.<br>
-              Ближе к полуночи работа только начинается.</p>
-            <a class="slider-list__item-btn btn" href="#">Узнать больше</a>
-          </li>
-        </ul>
-      </section>
-    </header>
+    <div class="background-grey">
+      <div class="container">
+        <header class="main-header">
+          <nav class="main-header__main-navigation">
+            <img class="main-header__logo" src="img/nerds-logo.png" alt="Логотип дизайн-студии Нёрдс" width="160" height="65" tabindex="1">
+            <ul class="main-header__site-navigation">
+              <li class="site-navigation__item">
+                <a class="site-navigation__a actual" tabindex="1">Студия</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__a" href="#" tabindex="1">Клиенты</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__a" href="catalog.html" tabindex="1">Магазин</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__a" href="#" tabindex="1">Контакты</a>
+              </li>
+            </ul>
+            <ul class="main-header__user-navigation">
+              <li class="user-navigation__item">
+                <a class="user-navigation__a" href="#" tabindex="0">Корзина</a>
+              </li>
+            </ul>
+          </nav>
+          <!--Slider-->
+          <section class="slider">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <div class="slider-controls">
+              <label class="active"></label>
+              <label></label>
+              <label></label>
+            </div>
+            <ul class="slider-list">
+              <li class="slider-list__item" id="slide-1">
+                <h3>Долго, дорого,<br>
+                  скрупулезно.</h3>
+                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <a class="slider-list__item-btn btn" href="#">Узнать больше</a>
+              </li>
+              <li class="slider-list__item" id="slide-2">
+                <h3>Любим математику как никто другой</h3>
+                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <a class="slider-list__item-btn btn" href="#">Узнать больше</a>
+              </li>
+              <li class="slider-list__item" id="slide-3">
+                <h3>Только ночь,<br>
+                  только хардкор</h3>
+                <p>Работать днем, как все? Мы против этого.<br>
+                  Ближе к полуночи работа только начинается.</p>
+                <a class="slider-list__item-btn btn" href="#">Узнать больше</a>
+              </li>
+            </ul>
+          </section>
+        </header>
+      </div>
+    </div>
     <main>
       <div class="container">
         <section class="offers">
@@ -118,9 +120,11 @@
                   <span class="indicators__numeric">146</span>
                   <span class="indicators__percent">%</span></td>
                 <td class="indicators__data">
-                  <span class="indicators__numeric">100</span><span class="indicators__percent">%</span></td>
+                  <span class="indicators__numeric">100</span>
+                  <span class="indicators__percent">%</span></td>
                 <td class="indicators__data">
-                  <span class="indicators__numeric">50</span><span class="indicators__percent">%</span></td>
+                  <span class="indicators__numeric">50</span>
+                  <span class="indicators__percent">%</span></td>
               </tr>
               <tr class="indicators__row-2">
                 <td>Уровень самоотдачи</td>
@@ -134,29 +138,28 @@
           <h3 class="visually-hidden">Наши клиенты</h3>
           <ul class="clientage__list">
             <li class="clientage__list-item">
-              <a href="https://htmlacademy.ru/intensive/htmlcss" tabindex="0">
+              <a class="clientage__list-item-a" href="https://htmlacademy.ru/intensive/htmlcss" tabindex="0">
                 <img class="clientage__list-item-logo1" src="img/logo-HTML.png" alt="HTML Academy" width="199" height="68"></a>
             </li>
             <li class="clientage__list-item">
-              <a href="#" tabindex="0">
+              <a class="clientage__list-item-a" href="#" tabindex="0">
                 <img class="clientage__list-item-logo2" src="img/logo-Borodinski.png" alt="Barbershop Borodinski" width="209" height="90"></a>
             </li>
             <li class="clientage__list-item">
-              <a href="#" tabindex="0">
+              <a class="clientage__list-item-a" href="#" tabindex="0">
                 <img class="clientage__list-item-logo3" src="img/logo-PINK.png" alt="PINK" width="185" height="52"></a>
             </li>
             <li class="clientage__list-item">
-              <a href="#" tabindex="0">
+              <a class="clientage__list-item-a" href="#" tabindex="0">
                 <img class="clientage__list-item-logo4" src="img/logo-MiSHKA.png" alt="MiSHKA" width="173" height="84"></a>
             </li>
           </ul>
         </section>
-      </main>
-    </div>
+      </div>
+    </main>
     <footer class="main-footer">
-      <img class="main-footer__map" src="img/map-min.jpg" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.: +7(812) 275-75-75" width="1440px" height="416px">
+      <iframe class="main-footer__map" src="https://yandex.ru/map-widget/v1/-/CBB5AWEWoA" width="1440" height="416"></iframe>
       <div class="container">
-        <div class="main-footer__map-marker"></div>
         <section class="main-footer__address">
           <h3 class="visually-hidden">Контактная информация</h3>
           <span class="main-footer__address-title">Nёrds design studio</span>
@@ -165,7 +168,7 @@
             ул. Б. Конюшенная, д. 19/8<br>
             <span class="main-footer__address-phone">тел.: +7(812) 275-75-75</span>
           </p>
-          <a class="main-footer__address-btn btn" tabindex="0">Напишите нам</a>
+          <a class="main-footer__address-btn btn" href="writeus.html" tabindex="0">Напишите нам</a>
         </section>
         <!-- ЕСТЬ ВОПРОСЫ================================================================================================================================================================================================================= -->
         <div class="main-footer__wrapper">
@@ -212,45 +215,29 @@
             <span class="main-footer__sale">Скидка 10% для друзей из социальных сетей.</span>
           </p>
         </div>
-      </footer>
-      <!--Модальное окно
-      ================================================================================================================================================================================================================================================================================================================================================================================================================-->
-      <section class="modal modal-feedback">
-        <h3 class="modal__title">Напишите нам:</h3>
-        <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
-          <p>
-            <label for="name-field">Ваше имя:</label>
-            <input class="modal__input" name="name" id="name-field" placeholder="Имя Фамилия" autocomplete="on">
-          </p>
-          <p>
-            <label for="email-field">Ваш e-mail:</label>
-            <input class="modal__input" type="email" name="email" id="email-field" placeholder="email@example.com" autocomplete="on">
-          </p>
-          <p>
-            <label for="text-field">Текст письма:</label>
-            <textarea id="text-field" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="modal__btn btn">Отправить</button>
-          <button class="modal__close" type="button">Закрыть</button>
-        </form>
-      </section>
-    </div>
-    <script>
-      var link = document.querySelector(".main-footer__address-btn");
-      var popup = document.querySelector(".modal");
-      var close = document.querySelector(".modal__close");
-      var login = popup.querySelector(".modal__input");
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-        login.focus();
-      });
-
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-      });
-    </script>
+      </div>
+    </footer>
+    <!--Модальное окно
+    ================================================================================================================================================================================================================================================================================================================================================================================================================-->
+    <section class="modal modal-feedback">
+      <h3 class="modal__title">Напишите нам:</h3>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+        <p>
+          <label class="modal__label" for="name-field">Ваше имя:</label>
+          <input class="modal__login" name="name" id="name-field" placeholder="Имя Фамилия" autocomplete="on">
+        </p>
+        <p>
+          <label class="modal__label" for="email-field">Ваш e-mail:</label>
+          <input class="modal__email" type="email" name="email" id="email-field" placeholder="email@example.com" autocomplete="on">
+        </p>
+        <p>
+          <label class="modal__label" for="text-field">Текст письма:</label>
+          <textarea id="text-field" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="modal__btn btn">Отправить</button>
+      </form>
+      <button class="modal__close" type="button" aria-label="Закрыть модальное окно">Закрыть</button>
+    </section>
+    <script src="js/script-min.js"></script>
   </body>
 </html>
