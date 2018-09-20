@@ -13,7 +13,7 @@
         <header class="main-header">
           <nav class="main-header__main-navigation">
             <a href="index.html">
-              <img class="main-header__logo" src="img/nerds-logo.png" alt="Логотип дизайн студии Нёрдс" width="160" height="65">
+              <img class="main-header__logo" src="img/nerds-logo.svg" alt="Логотип дизайн студии Нёрдс" width="160" height="65">
             </a>
             <ul class="main-header__site-navigation">
               <li class="site-navigation__item">
@@ -55,10 +55,12 @@
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price">от
+                  <label class="min-price">
+                    <span class="min-price__text">от</span>
                     <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до
-                    <input name="max-price" type="text" value="15000"></label>
+                  <label class="max-price">
+                    <span class="max-price__text">до</span>
+                    <input name="max-price" type="text" value="15 000"></label>
                 </div>
               </div>
               <p class="filters__net">Сетка:</p>
@@ -145,18 +147,16 @@
           <section class="products">
             <div class="sorting-wrapper">
               <p class="sorting">Сортировать:</p>
-              <a class="by-price current" aria-label="Сортировать продукты по цене" tabindex="0">По цене</a>
-              <a class="by-type" aria-label="Сортировать продукты по типу" tabindex="0">По типу</a>
-              <a class="by-name" aria-label="Сортировать продукты по названию" tabindex="0">По названию</a>
+              <div class="sorting-value-wrapper">
+                <a class="by-price current" aria-label="Сортировать продукты по цене" tabindex="0">По цене</a>
+                <a class="by-type" aria-label="Сортировать продукты по типу" tabindex="0">По типу</a>
+                <a class="by-name" aria-label="Сортировать продукты по названию" tabindex="0">По названию</a>
+              </div>
               <a class="descendingly current" href="#" aria-label="Сортировать продукты по убываюшей цене">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewbox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                  <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
               </a>
               <a class="ascendingly" href="#" aria-label="Сортировать продукты по возрастающей цене">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewbox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                  <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
               </a>
             </div>
             <ul class="products__list">
@@ -166,7 +166,9 @@
                 </a>
                 <div class="hover__wrapper">
                   <div class="hover">
-                    <h3 class="hover__title">Sedona</h3>
+                    <a href="#">
+                      <h3 class="hover__title">Sedona</h3>
+                    </a>
                     <p class="hover__text">Информационный сайт для туристов</p>
                     <a class="hover__btn btn" href="#">9 900 руб.</a>
                   </div>
@@ -178,7 +180,9 @@
                 </a>
                 <div class="hover__wrapper">
                   <div class="hover">
-                    <h3 class="hover__title">Pink app</h3>
+                    <a href="#">
+                      <h3 class="hover__title">Pink app</h3>
+                    </a>
                     <p class="hover__text">Продуктовый лендинг приложения для iOS и Android</p>
                     <a class="hover__btn btn" href="#">9 900 руб.</a>
                   </div>
@@ -190,7 +194,9 @@
                 </a>
                 <div class="hover__wrapper">
                   <div class="hover">
-                    <h3 class="hover__title">Barbershop</h3>
+                    <a href="#">
+                      <h3 class="hover__title">Barbershop</h3>
+                    </a>
                     <p class="hover__text">Сайт салона красоты. Для мужчин, да.</p>
                     <a class="hover__btn btn" href="#">9 900 руб.</a>
                   </div>
@@ -202,7 +208,9 @@
                 </a>
                 <div class="hover__wrapper">
                   <div class="hover">
-                    <h3 class="hover__title">Mishka</h3>
+                    <a href="#">
+                      <h3 class="hover__title">Mishka</h3>
+                    </a>
                     <p class="hover__text">Интернет-магазин вязаных игрушек</p>
                     <a class="hover__btn btn" href="#">9 900 руб.</a>
                   </div>
@@ -214,7 +222,9 @@
                 </a>
                 <div class="hover__wrapper">
                   <div class="hover">
-                    <h3 class="hover__title">A plus</h3>
+                    <a href="#">
+                      <h3 class="hover__title">A plus</h3>
+                    </a>
                     <p class="hover__text">Лендинг курсов повышения квалификации</p>
                     <a class="hover__btn btn" href="#">9 900 руб.</a>
                   </div>
@@ -226,7 +236,9 @@
                 </a>
                 <div class="hover__wrapper">
                   <div class="hover">
-                    <h3 class="hover__title">Kvast</h3>
+                    <a href="#">
+                      <h3 class="hover__title">Kvast</h3>
+                    </a>
                     <p class="hover__text">Промо-сайт производителя крафтового класса</p>
                     <a class="hover__btn btn" href="#">9 900 руб.</a>
                   </div>
@@ -252,14 +264,16 @@
       </div>
     </main>
     <footer class="main-footer">
-      <iframe class="main-footer__map" src="https://yandex.ru/map-widget/v1/-/CBuuR-sj1C" width="1440" height="416"></iframe>
+      <div class="map-wrapper">
+        <iframe class="main-footer__map" src="https://yandex.ru/map-widget/v1/-/CBuuR-sj1C" width="1440" height="416"></iframe>
+      </div>
       <div class="container">
         <section class="main-footer__address">
           <h3 class="visually-hidden">Контактная информация</h3>
           <span class="main-footer__address-title">Nёrds design studio</span>
           <p class="main-footer__address-text">
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8<br>
+            <span>191186, Санкт-Петербург,</span>
+            <span>ул. Б. Конюшенная, д. 19/8</span>
             <span class="main-footer__address-phone">тел.: +7(812) 275-75-75</span>
           </p>
           <a class="main-footer__address-btn btn" href="writeus.html" tabindex="0">Напишите нам</a>
@@ -302,11 +316,10 @@
               </a>
             </li>
           </ul>
-
-          <p class="main-footer__text">
-            <span class="main-footer__tagline">Давайте дружить, это выгодно!</span><br>
+          <div class="main-footer__text">
+            <span class="main-footer__tagline">Давайте дружить, это выгодно!</span>
             <span class="main-footer__sale">Скидка 10% для друзей из социальных сетей.</span>
-          </p>
+          </div>
         </div>
       </div>
     </footer>
@@ -329,7 +342,7 @@
         </p>
         <button class="modal__btn btn">Отправить</button>
       </form>
-        <button class="modal__close" type="button" aria-label="Закрыть модальное окно">Закрыть</button>
+      <button class="modal__close" type="button" aria-label="Закрыть модальное окно">Закрыть</button>
     </section>
     <script src="js/script-min.js"></script>
   </body>
